@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/company_hotel?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
+
+  jpa:
+    hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate.ddl-auto: update
+    hibernate:
+      jdbc: time_zone = TimeZone
+
